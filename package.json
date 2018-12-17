@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/pomyo/unit-13-part-1/issues"
   },
-  "homepage": "https://github.com/pomyo/unit-13-part-1#readme",
+  "homepage": "https://github.com/justinkook/todolistJK",
   "dependencies": {
     "express": "^4.16.4",
     "mongoose": "^5.3.14",
