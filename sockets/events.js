@@ -1,18 +1,18 @@
-module.exports = function (skynet) {
+module.exports = function (task) {
 
-    skynet.on('connection', function(socket) {
+    task.on('connection', function(socket) {
         console.log('connected');
 
         socket.on('add-todo', function(data) {
-            skynet.emit('emit-todo', data);
+            task.emit('emit-todo', data);
         });
         
         socket.on('set-done', function(data) {
-            skynet.emit('emit-done', data);
+            task.emit('emit-done', data);
         });
 
         socket.on('delete-todo', function(data) {
-            skynet.emit('emit-delete', data);
+            task.emit('emit-delete', data);
         });
     })
 }
